@@ -23,14 +23,14 @@ namespace alternative_vo
 struct VOViewerLine
 {
   /// Positions of the points
-  std::vector< openMVG::Vec2f > m_pts ;
+  std::vector< openMVG::Vec2f > m_pts;
 
   /// Color of the elements
-  QColor m_color ;
+  QColor m_color;
 
   /// Default color for a line
-  static const QColor DEFAULT_LINE_COLOR ;
-} ;
+  static const QColor DEFAULT_LINE_COLOR;
+};
 
 /**
 * Helper structure used to represent a point and it's associated color
@@ -38,17 +38,17 @@ struct VOViewerLine
 struct VOViewerPoint
 {
   /// Position of the point
-  openMVG::Vec2f m_pt ;
+  openMVG::Vec2f m_pt;
 
   /// Color of the point
-  QColor m_color ;
+  QColor m_color;
 
   /// Default color for a tracked point
-  static const QColor DEFAULT_TRACKED_POINT_COLOR ;
+  static const QColor DEFAULT_TRACKED_POINT_COLOR;
 
   /// Default color for a newly added point
-  static const QColor DEFAULT_NEW_POINT_COLOR ;
-} ;
+  static const QColor DEFAULT_NEW_POINT_COLOR;
+};
 }
 
 #endif

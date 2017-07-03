@@ -23,23 +23,23 @@ namespace alternative_vo
 class VOViewerPanel : public QWidget
 {
   public:
-    VOViewerPanel( QWidget * parent ) ;
+    VOViewerPanel( QWidget * parent );
 
-    void SetImage( QImage & img ) ;
+    void SetImage( QImage & img );
 
     /**
     * @brief Set an image and draw some elements on it
     * @param lines List of lines to draw
     */
-    void SetImage( QImage & img , const std::vector< VOViewerLine > & lines , const std::vector< VOViewerPoint > & points ) ;
+    void SetImage( QImage & img , const std::vector< VOViewerLine > & lines , const std::vector< VOViewerPoint > & points );
 
   private:
 
-    void BuildInterface( void ) ;
-    void MakeConnections( void ) ;
+    void BuildInterface( void );
+    void MakeConnections( void );
 
-    QLabel * m_image_view ;
-} ;
+    QLabel * m_image_view;
+};
 }
 
 #endif
